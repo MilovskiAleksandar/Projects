@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style/beerPage.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div>
+                <a href="#" class="navbar-brand" id="firstPage">Beer Bar</a>
+                <a href="#" class="navbar-brand" id="Beers">Beers</a>
+                <a href="#" class="navbar-brand" id="RandomBeer">Random Beer</a>
+            </div>
+        </div>
+    </nav>
+    <!-- firstPAGE -->
+    <div id="mainPage">
+        <h1>Hello, this is beer world</h1>
+        <p>This is a simple beer page, you can get all the informations for beers here</p>
+        <img src="./img/mainImage.png" alt="Glass of beer" width="100%">
+    </div>
+
+
+    <!-- secondPAGE -->
+    <div id="beersPage">
+        <div class="pageSort">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Page Size
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="showFive" href="#">Show 5</a></li>
+                    <li><a class="dropdown-item" id="showTen" href="#">Show 10</a></li>
+                    <li><a class="dropdown-item" id="showTwenty" href="#">Show 20</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="notification"></div>
+
+            <div class="row row-cols-md-3" id="cardContainer"></div>
+            <div class="row row-cols-md-3" id="cardContainer1"></div>
+
+        </div>
+
+        <div id="buttons">
+            <button type="button" class="btn btn-danger" id="previous">PREVIOUS</button>
+            <button type="button" class="btn btn-success" id="next">NEXT</button>
+        </div>
+    </div>
+    <!-- random beer -->
+    <div id="randomBeerPage">
+        <div id="result">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
